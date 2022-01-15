@@ -1,0 +1,13 @@
+$var-color-one: #191c32;
+$var-color-two: #1033fc;
+$var-color-three: #ffffff;
+$var-color-four: darken($var-color-two, 20%);
+$var-color-five: #ffffff;
+
+:root {
+    --primary-color: #{$var-color-one};
+    --secondary-color: #{$var-color-two};
+    --text-color: #{$var-color-three};
+    --secondary-color-alt: #{$var-color-four};
+    --bg-color: #{$var-color-five};
+}
