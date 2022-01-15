@@ -1,0 +1,12 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Portafolio personal",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch ./assets/scss/main.scss ./assets/css/main.css --style=compressed"
+  },
+  "keywords": [],
+  "author": "Brandon Alexis Machado",
+  "license": "ISC"
+}
