@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <!--* Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <!-- todo: Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <!-- todo: header -->
+    <header class="header">
+        <!-- logo -->
+        <div class="logo">
+            <img src="./assets/img/svg/logo.svg" alt="logo" class="image">
+        </div>
+        <!-- navigation -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Sobre</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#knowledge" class="nav__link">Conocimientos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Proyectos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- toggler button -->
+        <div id="toggler">
+            <span class="toggler__bar"></span>
+            <span class="toggler__bar"></span>
+            <span class="toggler__bar"></span>
+        </div>
+    </header>
+    <!-- todo: container -->
+    <main class="container">
+        <!-- *home section -->
+        <section class="section home" id="home">
+            <div class="home__block">
+                <h2 class="home__title">
+                    Soy <span class="home__name">Brandon</span> Alexis
+                </h2>
+                <p class="home__paragraph">
+                    Apasionado por el desarrollo de software y la contruccion de interfaces para aplicaciones web personalizadas acorde a tus necesidades y escalables para su mantenibilidad a largo plazo.
+                </p>
+                <a href="./views/HV.html" class="button" target="_black">Descargar HV</a>
+            </div>
+            <div class="home__block home__block--image">
+                <img src="./assets/img/foto-remove.png" alt="personal photo" class="image">
+            </div>
+        </section>
+        <!-- *About section -->
+        <section class="section about" id="about">
+            <div class="about__block about__block--image">
+                <img src="./assets/img/foto.jpeg" alt="profile photo" class="image">
+            </div>
+            <div class="about__block">
+                <h2 class="title">Sobre mi</h2>
+                <p class="about__paragraph">
+                    Hola, mi nombre es Brandon Alexis Machado Ambuila, soy de Colombia y graduado del <abbr title="Centro Colombiano de Estudios Profesionales">CECEP</abbr> como tecnologo en Sistemas de Informacion y me dedico al desarrollo de aplicaciones web haciendo uso de diversas tecnologias para su contruccion.
+                </p>
+                <p class="about__paragraph">
+                    Estoy principalmente interesado en el desarrollo frontend para la maquetacion de interfaces agradables para el usuario junto con una adaptabilidad a todas las pantallas de los dispositivos, dispuesto a aprender nuevas tecnologias para mejorar en diferentes aspectos el proceso de construccion de las aplicaciones como profesional.
+                </p>
+                <a href="" class="button">Leer mas</a>
+            </div>
+        </section>
+        <!-- *Knowledge section -->
+        <section class="section knowledge" id="knowledge">
+            <h2 class="title">Conocimientos</h2>
+            <div class="knowledge__block">
+                <!-- Cards -->
+                <div class="cards">
+                    <!-- Card -->
+                    <div class="card--medium">
+                        <div class="card__background">
+                            <ion-icon name="logo-html5" class="card__icon"></ion-icon>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__text">html</h3>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <div class="card--medium">
+                        <div class="card__background">
+                            <ion-icon name="logo-CSS3" class="card__icon"></ion-icon>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__text">css</h3>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <div class="card--medium">
+                        <div class="card__background">
+                            <ion-icon name="logo-javascript" class="card__icon"></ion-icon>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__text">Javascript</h3>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <div class="card--medium">
+                        <div class="card__background">
+                            <ion-icon name="server" class="card__icon"></ion-icon>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__text">Sql</h3>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <div class="card--medium">
+                        <div class="card__background">
+                            <ion-icon name="logo-nodejs" class="card__icon"></ion-icon>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__text">nodejs</h3>
+                        </div>
+                    </div>
+                    <!-- Card -->
+                    <div class="card--medium">
+                        <div class="card__background">
+                            <ion-icon name="logo-github" class="card__icon"></ion-icon>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__text">github</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- *Projects section -->
+        <section class="section projects" id="projects">
+            <div class="projects__block">
+                <h2 class="title">Proyectos</h2>
+                <!-- cards -->
+                <div class="cards">
+                    <!-- Card-->
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="./assets/img/image/oviedo-bg.png" alt="card image" class="image">
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__name">Oviedo</h3>
+                            <div class="card__links">
+                                <a href="https://github.com/Brandon-github" class="card__link" target="_blank">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                                <a href="https://proyecto-oviedo.vercel.app/" class="card__link" target="_blank">
+                                    <ion-icon name="globe-outline"></ion-icon>
+                                </a>
+                                <a href="https://github.com/Brandon-github/Proyecto-Oviedo" class="card__link" target="_blank">
+                                    <ion-icon name="code-slash-outline"></ion-icon>
+                                </a>
+                            </div>
+                            <a href="" class="button button--medium">Ver detalles</a>
+                        </div>
+                    </div>
+                    <!-- Card-->
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="./assets/img/image/foot-fesh-bg.png" alt="card image" class="image">
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__name">Food Fresh</h3>
+                            <div class="card__links">
+                                <a href="https://github.com/Brandon-github" class="card__link" target="_blank">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                                <a href="https://food-fresh-alpha.vercel.app/" class="card__link" target="_blank">
+                                    <ion-icon name="globe-outline"></ion-icon>
+                                </a>
+                                <a href="https://github.com/Brandon-github/FoodFresh" class="card__link" target="_blank">
+                                    <ion-icon name="code-slash-outline"></ion-icon>
+                                </a>
+                            </div>
+                            <a href="" class="button button--medium">Ver detalles</a>
+                        </div>
+                    </div>
+                    <!-- Card-->
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="./assets/img/card-image.jpg" alt="card image" class="image">
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__name">Project name</h3>
+                            <div class="card__links">
+                                <a href="" class="card__link" target="_blank">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                                <a href="" class="card__link" target="_blank">
+                                    <ion-icon name="globe-outline"></ion-icon>
+                                </a>
+                                <a href="" class="card__link" target="_blank">
+                                    <ion-icon name="code-slash-outline"></ion-icon>
+                                </a>
+                            </div>
+                            <a href="" class="button button--medium">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- *Contact section -->
+        <section class="section--small contact" id="contact">
+            <ul class="contact__list">
+                <li class="contact__item">
+                    <a href="https://www.linkedin.com/in/brandon-alexis-machado-ambuila-b3b167207/" target="_blank" class="contact__link">
+                        <span class="contact__icon">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </span>
+                        <span class="contact__text">
+                            LinkedIn
+                        </span>
+                    </a>
+                </li>
+                <li class="contact__item">
+                    <a href="https://www.facebook.com/profile.php?id=100070199853938" target="_blank" class="contact__link">
+                        <span class="contact__icon">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </span>
+                        <span class="contact__text">
+                            Facebook
+                        </span>
+                    </a>
+                </li>
+                <li class="contact__item">
+                    <a href="https://github.com/Brandon-github"  target="_blank" class="contact__link">
+                        <span class="contact__icon">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </span>
+                        <span class="contact__text">
+                            Github
+                        </span>
+                    </a>
+                </li>
+            </ul> 
+        </section>
+        <!-- todo: scrips -->
+        <!-- toggler script -->
+        <script src="./assets/js/toggler.js"></script>
+        <!-- Ionicos scripts -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </main>
+</body>
+</html>
