@@ -1,0 +1,97 @@
+$card-lenght: 300px;
+
+.cards {
+    @include flex-default;
+
+    .card {
+        width: $card-lenght;
+        height: $card-lenght;
+        position: relative;
+        margin: 0 40px;
+        transition: .3s linear;
+        overflow: hidden;
+        border-radius: 10px;
+
+        &:hover .card__background {
+            left: 100%;
+        }
+
+        &--medium {
+            // ? modificacion de dimensiones
+            $card-lenght: 250px;
+            width: $card-lenght;
+            height: $card-lenght;
+            @extend .card;
+            transform: scale(0.55);
+            margin: 0 -20px;
+        }
+
+        .card__image {
+            @extend %absolute-position;
+            transition: .3s linear;
+
+            &:hover+.card__content {
+                left: 0;
+            }
+
+            .image {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+            }
+        }
+
+        .card__background {
+            @extend .card__image;
+            @include flex-default;
+            background-color: $secondary-color;
+
+            .card__icon {
+                font-size: 6em;
+                color: $text-color;
+            }
+        }
+
+        .card__content {
+            @extend %absolute-position;
+            left: -100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: $text-color;
+            @include flex-direction(center, center, column);
+            padding: 10px;
+            z-index: 5;
+            transition: .3s linear;
+
+            &:hover {
+                left: 0;
+            }
+
+            .card__name {
+                color: $text-color;
+                font-size: 2em;
+            }
+
+            .card__links {
+                display: flex;
+
+                .card__link {
+                    margin: 0 20px;
+                    text-decoration: none;
+                    color: $text-color;
+                    font-size: 2.2em;
+                    margin-top: 40px;
+                    transition: .5s ease;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+
+            .card__text {
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.button {
+    text-decoration: none;
+    border-style: none;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: $secondary-color;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: $text-color;
+    display: inline-block;
+    margin: 40px 0;
+    transition: .3s ease-in;
+
+    &:hover {
+        background-color: $secondary-color-alt;
+    }
+}

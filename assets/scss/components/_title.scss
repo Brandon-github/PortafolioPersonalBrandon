@@ -1,0 +1,18 @@
+.title {
+    color: $text-color;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 2em;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 8px;
+        width: 80px;
+        height: 8px;
+        border-radius: 8px;
+        background-color: $secondary-color;
+    }
+}
