@@ -1,0 +1,11 @@
+.projects {
+    background-color: $primary-color;
+
+    .projects__block {
+        @include flex-direction(center, center, column);
+        .card {
+            margin: 30px;
+        }
+        // ? /assets/scss/components/card
+    }
+}

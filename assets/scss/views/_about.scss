@@ -1,0 +1,39 @@
+.about {
+    background-color: $primary-color;
+    @include grid-tc-r(500px 700px, 400px);
+    justify-content: start;
+    align-items: center;
+
+    .about__block {
+
+        &--image {
+            height: auto;
+            @include flex-default;
+
+            .image {
+                width: 80%;
+                height: 80%;
+            }
+        }
+
+        .about__paragraph {
+            color: $text-color;
+            text-align: justify;
+            margin-top: 30px;
+            font-size: 1.3em;
+        }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .about {
+        @include grid-tc-r(1fr, 400px);
+        padding: 40px;
+
+        .about__block {
+            &--image {
+                display: none;
+            }
+        }
+    }
+}

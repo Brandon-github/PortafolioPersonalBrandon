@@ -1,0 +1,5 @@
+.knowledge {
+    background-color: $primary-color;
+    @include flex-direction(center, center, column);
+    // ? /assets/scss/components/card
+}
