@@ -1,0 +1,12 @@
+@mixin grid-tc-r($columns, $row) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-row: $row;
+}
+
+@mixin grid-tc-r-g($columns, $row, $gap) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-row: $row;
+    gap: $gap;
+}

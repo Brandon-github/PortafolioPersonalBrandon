@@ -1,0 +1,16 @@
+@mixin position($valuePosition, $propertyX, $propertyY, $valuePropertyX, $valuePropertyY) {
+    position: $valuePosition;
+
+    //* PosX validacion ? left or right
+    @if $propertyX == left {
+        #{$propertyX}: $valuePropertyX;
+    } @else if $propertyX == right {
+        #{$propertyX}: $valuePropertyX;
+    }
+
+    @if $propertyY == top {
+        #{$propertyY}: $valuePropertyY;
+    } @else if $propertyY == bottom {
+        #{$propertyY}: $valuePropertyY;
+    }
+}
