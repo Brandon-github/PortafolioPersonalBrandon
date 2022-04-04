@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,18 @@
     <title>Portafolio</title>
     <!--* Favicon -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <!-- AOS Styles -->
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
     <!-- todo: Styles -->
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
+
 <body>
     <!-- todo: header -->
     <header class="header">
         <!-- logo -->
         <div class="logo">
-            <img src="./assets/img/svg/logo.svg" alt="logo" class="image">
+            <img src="./assets/img/svg/logo.svg" alt="logo" class="image" id="logo">
         </div>
         <!-- navigation -->
         <nav class="nav">
@@ -49,40 +53,47 @@
         <!-- *home section -->
         <section class="section home" id="home">
             <div class="home__block">
-                <h2 class="home__title">
+                <h2 class="home__title" data-aos="fade-down">
                     Soy <span class="home__name">Brandon</span> Alexis
                 </h2>
-                <p class="home__paragraph">
-                    Apasionado por el desarrollo de software y la contruccion de interfaces para aplicaciones web personalizadas acorde a tus necesidades y escalables para su mantenibilidad a largo plazo.
+                <p class="home__paragraph" data-aos="fade-down">
+                    Apasionado por el desarrollo de software y la contruccion de interfaces para aplicaciones web
+                    personalizadas acorde a tus necesidades y escalables para su mantenibilidad a largo plazo.
                 </p>
-                <a href="./views/HV.html" class="button" target="_black">Descargar HV</a>
+                <a href="./views/HV.html" class="button" target="_black" data-aos="fade-right">Descargar HV</a>
             </div>
-            <div class="home__block home__block--image">
+            <div class="home__block home__block--image" data-aos="fade-left">
                 <img src="./assets/img/foto-remove.png" alt="personal photo" class="image">
             </div>
         </section>
         <!-- *About section -->
         <section class="section about" id="about">
-            <div class="about__block about__block--image">
+            <div class="about__block about__block--image" data-aos="flip-up">
                 <img src="./assets/img/foto.jpeg" alt="profile photo" class="image">
             </div>
             <div class="about__block">
-                <h2 class="title">Sobre mi</h2>
-                <p class="about__paragraph">
-                    Hola, mi nombre es Brandon Alexis Machado Ambuila, soy de Colombia y graduado del <abbr title="Centro Colombiano de Estudios Profesionales">CECEP</abbr> como tecnologo en Sistemas de Informacion y me dedico al desarrollo de aplicaciones web haciendo uso de diversas tecnologias para su contruccion.
+                <h2 class="title" data-aos="zoom-in">Sobre mi</h2>
+                <p class="about__paragraph" data-aos="fade-down">
+                    Hola, mi nombre es Brandon Alexis Machado Ambuila, soy de Colombia y graduado del <abbr
+                        title="Centro Colombiano de Estudios Profesionales">CECEP</abbr> como tecnologo en Sistemas de
+                    Informacion y me dedico al desarrollo de aplicaciones web haciendo uso de diversas tecnologias para
+                    su contruccion.
                 </p>
-                <p class="about__paragraph">
-                    Estoy principalmente interesado en el desarrollo frontend para la maquetacion de interfaces agradables para el usuario junto con una adaptabilidad a todas las pantallas de los dispositivos, dispuesto a aprender nuevas tecnologias para mejorar en diferentes aspectos el proceso de construccion de las aplicaciones como profesional.
+                <p class="about__paragraph" data-aos="fade-down">
+                    Estoy principalmente interesado en el desarrollo frontend para la maquetacion de interfaces
+                    agradables para el usuario junto con una adaptabilidad a todas las pantallas de los dispositivos,
+                    dispuesto a aprender nuevas tecnologias para mejorar en diferentes aspectos el proceso de
+                    construccion de las aplicaciones como profesional.
                 </p>
-                <a href="" class="button">Leer mas</a>
+                <a href="" class="button" data-aos="fade-left">Leer mas</a>
             </div>
         </section>
         <!-- *Knowledge section -->
         <section class="section knowledge" id="knowledge">
-            <h2 class="title">Conocimientos</h2>
+            <h2 class="title" data-aos="zoom-in">Conocimientos</h2>
             <div class="knowledge__block">
                 <!-- Cards -->
-                <div class="cards">
+                <div class="cards" data-aos="zoom-out-down">
                     <!-- Card -->
                     <div class="card--medium">
                         <div class="card__background">
@@ -143,11 +154,11 @@
         <!-- *Projects section -->
         <section class="section projects" id="projects">
             <div class="projects__block">
-                <h2 class="title">Proyectos</h2>
+                <h2 class="title" data-aos="zoom-in">Proyectos</h2>
                 <!-- cards -->
                 <div class="cards">
                     <!-- Card-->
-                    <div class="card">
+                    <div class="card" data-aos="flip-down">
                         <div class="card__image">
                             <img src="./assets/img/image/oviedo-bg.png" alt="card image" class="image">
                         </div>
@@ -160,7 +171,8 @@
                                 <a href="https://proyecto-oviedo.vercel.app/" class="card__link" target="_blank">
                                     <ion-icon name="globe-outline"></ion-icon>
                                 </a>
-                                <a href="https://github.com/Brandon-github/Proyecto-Oviedo" class="card__link" target="_blank">
+                                <a href="https://github.com/Brandon-github/Proyecto-Oviedo" class="card__link"
+                                    target="_blank">
                                     <ion-icon name="code-slash-outline"></ion-icon>
                                 </a>
                             </div>
@@ -168,7 +180,7 @@
                         </div>
                     </div>
                     <!-- Card-->
-                    <div class="card">
+                    <div class="card" data-aos="flip-down">
                         <div class="card__image">
                             <img src="./assets/img/image/foot-fesh-bg.png" alt="card image" class="image">
                         </div>
@@ -181,7 +193,8 @@
                                 <a href="https://food-fresh-alpha.vercel.app/" class="card__link" target="_blank">
                                     <ion-icon name="globe-outline"></ion-icon>
                                 </a>
-                                <a href="https://github.com/Brandon-github/FoodFresh" class="card__link" target="_blank">
+                                <a href="https://github.com/Brandon-github/FoodFresh" class="card__link"
+                                    target="_blank">
                                     <ion-icon name="code-slash-outline"></ion-icon>
                                 </a>
                             </div>
@@ -189,7 +202,7 @@
                         </div>
                     </div>
                     <!-- Card-->
-                    <div class="card">
+                    <div class="card" data-aos="flip-down">
                         <div class="card__image">
                             <img src="./assets/img/image/shoes-store-bg.png" alt="card image" class="image">
                         </div>
@@ -202,7 +215,8 @@
                                 <a href="https://shoes-store-iota.vercel.app/" class="card__link" target="_blank">
                                     <ion-icon name="globe-outline"></ion-icon>
                                 </a>
-                                <a href="https://github.com/Brandon-github/Shoes-Store" class="card__link" target="_blank">
+                                <a href="https://github.com/Brandon-github/Shoes-Store" class="card__link"
+                                    target="_blank">
                                     <ion-icon name="code-slash-outline"></ion-icon>
                                 </a>
                             </div>
@@ -216,7 +230,8 @@
         <section class="section--small contact" id="contact">
             <ul class="contact__list">
                 <li class="contact__item">
-                    <a href="https://www.linkedin.com/in/brandon-alexis-machado-ambuila-b3b167207/" target="_blank" class="contact__link">
+                    <a href="https://www.linkedin.com/in/brandon-alexis-machado-ambuila-b3b167207/" target="_blank"
+                        class="contact__link">
                         <span class="contact__icon">
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </span>
@@ -226,7 +241,8 @@
                     </a>
                 </li>
                 <li class="contact__item">
-                    <a href="https://www.facebook.com/profile.php?id=100070199853938" target="_blank" class="contact__link">
+                    <a href="https://www.facebook.com/profile.php?id=100070199853938" target="_blank"
+                        class="contact__link">
                         <span class="contact__icon">
                             <ion-icon name="logo-facebook"></ion-icon>
                         </span>
@@ -236,7 +252,7 @@
                     </a>
                 </li>
                 <li class="contact__item">
-                    <a href="https://github.com/Brandon-github"  target="_blank" class="contact__link">
+                    <a href="https://github.com/Brandon-github" target="_blank" class="contact__link">
                         <span class="contact__icon">
                             <ion-icon name="logo-github"></ion-icon>
                         </span>
@@ -245,14 +261,22 @@
                         </span>
                     </a>
                 </li>
-            </ul> 
+            </ul>
         </section>
         <!-- todo: scrips -->
         <!-- toggler script -->
         <script src="./assets/js/toggler.js"></script>
+        <!-- scroll Scripts -->
+        <script src="./assets/js/scroll.js"></script>
         <!-- Ionicos scripts -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- AOS Scripts -->
+        <script src="node_modules/aos/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </main>
 </body>
+
 </html>
