@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "Brandon Alexis Machado",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "sass": "^1.49.11"
+  }
 }
